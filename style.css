@@ -11,13 +11,27 @@ canvas {
 }
 #container{
     padding: 10px;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
 }
+#button-holder{
+    padding: 10px;
+    /* border: 1px solid purple; */
+    display: flex;
+ 
+    justify-content: flex-end;
+    margin: 10px 10px;
+}
+button{
+    
+    padding: 10px;
+    margin: 10 auto;
+}
+
 
 .square-fixed {
    
