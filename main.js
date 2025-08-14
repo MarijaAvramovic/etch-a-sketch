@@ -15,7 +15,7 @@ hoveringDivs.forEach(div => {
     div.addEventListener('mouseenter', () => {
         div.style.backgroundColor = 'lightblue';
     });
-    div.addEventListener('mouseleave', () => {
-        div.style.backgroundColor = '';
-    });
+    // div.addEventListener('mouseleave', () => {
+    //     div.style.backgroundColor = '';
+    // });
 });

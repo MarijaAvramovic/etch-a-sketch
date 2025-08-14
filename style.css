@@ -1,7 +1,14 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars if canvas is full-screen */
+}
 * {
   box-sizing: border-box;
 }
-
+canvas {
+  display: block; /* Remove extra space below canvas */
+   
+}
 #container{
     padding: 10px;
     border: 1px solid purple;
