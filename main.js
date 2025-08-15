@@ -1,6 +1,7 @@
 console.log("hi");
 
 const container = document.querySelector('#container');
+const btn = document.querySelector('button');
 
 
 for(let i = 0; i <= 34; i++) {
@@ -19,3 +20,10 @@ hoveringDivs.forEach(div => {
     //     div.style.backgroundColor = '';
     // });
 });
+
+btn.addEventListener('click', () => {
+    let userInput = prompt("Please enter the number of dquares per side:");
+    let integerValue = parseInt(userInput, 10);
+    container.remove();
+
+})
