@@ -25,5 +25,5 @@ btn.addEventListener('click', () => {
     let userInput = prompt("Please enter the number of dquares per side:");
     let integerValue = parseInt(userInput, 10);
     container.remove();
-
-})
+    
+});
