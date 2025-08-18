@@ -4,11 +4,11 @@ const container = document.querySelector('.container');
 const btn = document.querySelector('button');
 
 
-for(let i = 0; i <= 16; i++) {
+for(let i = 0; i < 16; i++) {
     const row = document.createElement('div');
     row.classList.add('row');
 
-    for(let j = 0; j <= 16; j++) {
+    for(let j = 0; j < 16; j++) {
     const squareDiv = document.createElement('div');
     squareDiv.classList.add('square-div');
     row.appendChild(squareDiv);
@@ -33,11 +33,11 @@ btn.addEventListener('click', () => {
     const newContainer = document.createElement('div');
     newContainer.classList.add('container');
 
-    for(let i = 0; i <= squares; i++) {
+    for(let i = 0; i < squares; i++) {
     const newRow = document.createElement('div');
     newRow.classList.add('row');
 
-    for(let j = 0; j <= squares; j++) {
+    for(let j = 0; j < squares; j++) {
     const box = document.createElement('div');
     box.classList.add('square-div');
     newRow.appendChild(box);
