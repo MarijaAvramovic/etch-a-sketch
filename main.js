@@ -1,6 +1,6 @@
 console.log("hi");
 
-const container = document.querySelector('#container');
+const container = document.querySelector('.container');
 const btn = document.querySelector('button');
 
 
@@ -28,21 +28,21 @@ hoveringDivs.forEach(div => {
 
 btn.addEventListener('click', () => {
     let userInput = prompt("Please enter the number of squares per side:");
-    let integerValue = parseInt(userInput, 10);
+    let squares = parseInt(userInput, 10);
     
-    const userContainer = document.createElement('div');
-    userContainer.classList.add('container');
+    const newContainer = document.createElement('div');
+    newContainer.classList.add('container');
 
-    for(let i = 0; i <= integerValue; i++) {
-    const userRow = document.createElement('div');
-    userRow.classList.add('row');
+    for(let i = 0; i <= squares; i++) {
+    const newRow = document.createElement('div');
+    newRow.classList.add('row');
 
-    for(let j = 0; j <= integerValue; j++) {
-    const userSqDiv = document.createElement('div');
-    userSqDiv.classList.add('square-div');
-    userRow.appendChild(userSqDiv);
+    for(let j = 0; j <= squares; j++) {
+    const box = document.createElement('div');
+    box.classList.add('square-div');
+    newRow.appendChild(box);
     }
-    userContainer.appendChild(userRow);
+    newContainer.appendChild(newRow);
 }
-container.replaceWith(userContainer);
+container.replaceWith(newContainer);
 });
