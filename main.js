@@ -39,10 +39,22 @@ btn.addEventListener('click', () => {
 
     for(let j = 0; j < squares; j++) {
     const box = document.createElement('div');
-    box.classList.add('square-div');
+    box.classList.add('box');
+    const calcWidth = `calc(100% / ${squares})`;
+    box.style.width = calcWidth;
     newRow.appendChild(box);
     }
     newContainer.appendChild(newRow);
 }
 container.replaceWith(newContainer);
+
+const hoveringBox = document.querySelectorAll('.box');
+
+
+hoveringBox.forEach(div => {
+    div.addEventListener('mouseenter', () => {
+        div.style.backgroundColor = 'black';
+    });
+
+});
 });

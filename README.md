@@ -45,4 +45,4 @@ Transform the behavior of a square when interacting with the mouse by introducin
 - Additionally, implement a progressive darkening effect where each interaction darkens the square by 10%. The goal is to achieve a fully black (or completely colored) square in only ten interactions.
 The opacity CSS property is useful here. 
 
-### time spent: 2h 
+### time spent: 4h 

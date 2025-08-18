@@ -23,6 +23,11 @@ body {
   border: 1px solid rgb(212, 166, 212); 
 }
 
+.box {
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgb(205, 93, 45); 
+}
+
 #button-holder{
     padding: 10px;
     /* border: 1px solid purple; */
