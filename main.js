@@ -29,8 +29,20 @@ hoveringDivs.forEach(div => {
 btn.addEventListener('click', () => {
     let userInput = prompt("Please enter the number of squares per side:");
     let integerValue = parseInt(userInput, 10);
-    container.remove();
-
     
+    const userContainer = document.createElement('div');
+    userContainer.classList.add('container');
 
+    for(let i = 0; i <= integerValue; i++) {
+    const userRow = document.createElement('div');
+    userRow.classList.add('row');
+
+    for(let j = 0; j <= integerValue; j++) {
+    const userSqDiv = document.createElement('div');
+    userSqDiv.classList.add('square-div');
+    userRow.appendChild(userSqDiv);
+    }
+    userContainer.appendChild(userRow);
+}
+container.replaceWith(userContainer);
 });
