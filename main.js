@@ -22,7 +22,14 @@ const hoveringDivs = document.querySelectorAll('.square-div');
 
 hoveringDivs.forEach(div => {
     div.addEventListener('mouseenter', () => {
+      
+
         div.style.backgroundColor =  getRandomRgbColor() ;
+
+            let currentOpacity = parseFloat(window.getComputedStyle(this).opacity);
+
+            let newOpacity = Math.min(currentOpacity + 0.1, 1.0);
+            this.style.opacity = newOpacity;
     });
 
 });
