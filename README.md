@@ -18,11 +18,6 @@ Changing the div’s background color using JavaScript.) This feat is leaving a 
 
 
 ## Extra credit
-Transform the behavior of a square when interacting with the mouse by introducing a series of modifications.
+Hover efect randomizes the squares RGB values with each interaction and darkens the square by 10%, achieving a fully colored square in only ten interactions.  
 
-- Rather than squares being the same color throughout the grid, randomize the squares’ RGB values with each interaction.
-
-- Additionally, implement a progressive darkening effect where each interaction darkens the square by 10%. The goal is to achieve a fully black (or completely colored) square in only ten interactions.
-The opacity CSS property is useful here. 
-
-### time spent total cooing research readme: 5h 
+### time spent total cooing research readme: 6h 
