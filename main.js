@@ -24,12 +24,12 @@ hoveringDivs.forEach(div => {
     div.addEventListener('mouseenter', () => {
       
 
-        div.style.backgroundColor =  getRandomRgbColor() ;
-
-            let currentOpacity = parseFloat(window.getComputedStyle(this).opacity);
+            let currentOpacity = parseFloat(window.getComputedStyle(div).opacity);
 
             let newOpacity = Math.min(currentOpacity + 0.1, 1.0);
-            this.style.opacity = newOpacity;
+            div.style.opacity = newOpacity;
+
+             div.style.backgroundColor =  getRandomRgbColor() ;
     });
 
 });
@@ -71,6 +71,11 @@ const hoveringBox = document.querySelectorAll('.box');
 
 hoveringBox.forEach(div => {
     div.addEventListener('mouseenter', () => {
+       let currentOpacity = parseFloat(window.getComputedStyle(div).opacity);
+
+            let newOpacity = Math.min(currentOpacity + 0.1, 1.0);
+            div.style.opacity = newOpacity;
+       
         div.style.backgroundColor = getRandomRgbColor();
     });
 
