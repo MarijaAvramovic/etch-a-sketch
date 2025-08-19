@@ -28,14 +28,19 @@ hoveringDivs.forEach(div => {
 });
 
 btn.addEventListener('click', () => {
-    let userInput = prompt("Please enter the number of squares per side:");
+    let userInput = prompt("Please enter the number of squares per side (must be below 100):");
     let squares = parseInt(userInput, 10);
+
+    if (squares > 100) {
+        alert("Error: Input exceeds the maximun allowed number of squares.")
+    } else {
     
     const newContainer = document.createElement('div');
     newContainer.classList.add('container');
 
     section.innerHTML = '';
 
+    
     for(let i = 0; i < squares; i++) {
     const newRow = document.createElement('div');
     newRow.classList.add('row');
@@ -51,7 +56,7 @@ btn.addEventListener('click', () => {
 }
 
 section.appendChild(newContainer);
-
+    } //else
 const hoveringBox = document.querySelectorAll('.box');
 
 
@@ -61,4 +66,6 @@ hoveringBox.forEach(div => {
     });
 
 });
-});
+})
+
+;
