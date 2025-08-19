@@ -1,5 +1,6 @@
 console.log("hi");
 
+const section = document.querySelector('section');
 const container = document.querySelector('.container');
 const btn = document.querySelector('button');
 
@@ -33,6 +34,8 @@ btn.addEventListener('click', () => {
     const newContainer = document.createElement('div');
     newContainer.classList.add('container');
 
+    section.innerHTML = '';
+
     for(let i = 0; i < squares; i++) {
     const newRow = document.createElement('div');
     newRow.classList.add('row');
@@ -46,7 +49,8 @@ btn.addEventListener('click', () => {
     }
     newContainer.appendChild(newRow);
 }
-container.replaceWith(newContainer);
+
+section.appendChild(newContainer);
 
 const hoveringBox = document.querySelectorAll('.box');
 
