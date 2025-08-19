@@ -28,10 +28,12 @@ hoveringDivs.forEach(div => {
 });
 
 btn.addEventListener('click', () => {
-    let userInput = prompt("Please enter the number of squares per side (must be below 100):");
+    let userInput = prompt("Please enter the number of squares per side (must be below 100):", "44");
     let squares = parseInt(userInput, 10);
 
-    if (squares > 100) {
+    if (squares === null || isNaN(squares)) {
+        alert("Invalid number entered.");}
+    else if (squares > 100) {
         alert("Error: Input exceeds the maximun allowed number of squares.")
     } else {
     
@@ -66,6 +68,5 @@ hoveringBox.forEach(div => {
     });
 
 });
-})
 
-;
+});//buttonAddEvent
