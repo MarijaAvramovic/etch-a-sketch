@@ -22,7 +22,7 @@ const hoveringDivs = document.querySelectorAll('.square-div');
 
 hoveringDivs.forEach(div => {
     div.addEventListener('mouseenter', () => {
-        div.style.backgroundColor = 'lightblue';
+        div.style.backgroundColor =  getRandomRgbColor() ;
     });
 
 });
@@ -64,9 +64,16 @@ const hoveringBox = document.querySelectorAll('.box');
 
 hoveringBox.forEach(div => {
     div.addEventListener('mouseenter', () => {
-        div.style.backgroundColor = 'black';
+        div.style.backgroundColor = getRandomRgbColor();
     });
 
 });
 
 });//buttonAddEvent
+
+ function getRandomRgbColor() {
+            const r = Math.floor(Math.random() * 256); // 0-255
+            const g = Math.floor(Math.random() * 256); // 0-255
+            const b = Math.floor(Math.random() * 256); // 0-255
+            return `rgb(${r}, ${g}, ${b})`;
+        }
